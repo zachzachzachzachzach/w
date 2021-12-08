@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: white;
 }
 #outsidebody {
@@ -45,8 +45,9 @@ body {
   height: 1080px;
   width: 700px;
   top: 0px;
-  left: 1335px;
+  left: 1250px;
   background-image: url("barber.gif");
+  background-size: 700px 1080px;
 }
 
 #hair {
