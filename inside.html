@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <title>SICK new cut</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="collection.css">
+</head>
+
+<body id="shopbody">
+
+  <div id="cutmenu">
+    <div id="cutTitle">Pick A Haircut</div>
+    <div class="cut" id="cut1" onclick="swapImage('hair', 'haircut1.gif'); ">The Warrior</div>
+    <div class="cut" id="cut2" onclick="swapImage('hair', 'haircut2.gif')">The Outdoorsman</div>
+    <div class="cut" id="cut3" onclick="swapImage('hair', 'haircut6.gif')">The Hokie-Hawk</div>
+    <div class="cut" id="cut4" onclick="swapImage('hair', 'haircut4.gif')">The Dreadnought</div>
+    <div class="cut" id="cut5" onclick="swapImage('hair', 'haircut5.gif')">The Wiseman</div>
+    <div class="cut" id="cut6" onclick="swapImage('hair', 'haircut7.gif')">The Highrise</div>
+    <div class="cut" id="cut7" onclick="swapImage('hair', 'haircut8.gif')">The Iron Pillar</div>
+    <div class="cut" id="cut8" onclick="swapImage('hair', 'haircut3.gif')">The Tower of Babble</div>
+    <div class="cut" id="cut9" onclick="swapImage('hair', 'haircut9.gif')">The Golden Arches</div>
+    <div class="cut" id="cut10" onclick="swapImage('hair', 'haircut10.gif')">The Seydor's Salvation</div>
+    <div class="cut" id="cut11" onclick="swapImage('hair', 'haircut11.gif')">The Bender</div>
+    <div class="cut" id="cut12" onclick="swapImage('hair', 'haircut12.gif')">The God of Speed</div>
+    <div class="cut" id="cut13" onclick="swapImage('hair', 'haircut13.gif')">The Usurper's Crown</div>
+  </div>
+  <div id="barber"></div>
+  <div id="hair"></div>
+  <div id="arm"></div>
+  <a href="worksCited.html">
+    <div id="styleslink"></div>
+  </a>
+  <img id="hud" src="gtaHUD.png">
+
+</body>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+$(function() {
+  $("#cutmenu")
+    .on("click", function(){
+    $("#arm").addClass('animate');
+  })
+  $("#arm").on("animationend", function(){
+    $(this).removeClass('animate');
+  });
+});
+</script>
+<script>
+function swapImage(id,newcut) {
+  setTimeout(function() {
+    id = document.getElementById(id);
+    id.style.backgroundImage = "url('" + newcut +"')";
+  }, 1500);
+}
+</script>
+
+</html>

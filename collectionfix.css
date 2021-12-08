@@ -1,0 +1,123 @@
+body {
+  /* overflow: hidden; */
+  background-color: white;
+}
+#outsidebody {
+  background-image: url("barbershop_outside.png");
+  background-size: cover;
+}
+#shopbody {
+  /* background-image: url("") */
+  background-size: cover;
+}
+
+#cutmenu {
+  position: relative;
+  height: 625px;
+  width: 400px;
+  top: 70px;
+  left: 40px;
+  background-color: rgba(5, 5, 5, 0.6);
+}
+
+#barber {
+  z-index: 3;
+  position: relative;
+  height: 400px;
+  width: 250px;
+  top: -300px;
+  left: 1100px;
+  background-color: black;
+}
+
+
+
+#hair {
+  z-index: 1;
+  position: absolute;
+  top: 300px;
+  left: 750px;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+}
+
+#redArrow {
+  cursor: pointer;
+  position: absolute;
+  top:280px;
+  left:765px;
+  height: 0px;
+  width: 0px;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 250px solid rgba(255, 0, 0, .8);
+}
+#start {
+  transform: scaleY(5);
+  position: relative;
+  top: -190px;
+  left: -17px;
+  color: white;
+  font-size: 18px;
+}
+#test {
+  position:relative;
+  top: -900px;
+  left: 700px;
+}
+
+@keyframes coverHair {
+  0% {
+    transform: translateX(0px) rotate(-70deg);
+  }
+  25% {
+    transform: translateX(-149px) rotate(-70deg);
+  }
+  75% {
+    transform: translateX(-150px) rotate(-70deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(-70deg);
+  }
+}
+.coverHair {
+  animation-name: coverHair;
+}
+
+@keyframes coverHair {
+  0% {
+    transform: translateX(0px) rotate(-70deg);
+  }
+  25% {
+    transform: translateX(-149px) rotate(-70deg);
+  }
+  75% {
+    transform: translateX(-150px) rotate(-70deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(-70deg);
+  }
+}
+.coverHair {
+  animation-name: coverHair;
+}
+
+.animate{
+  animation: shape-polymorph 5s;
+}
+
+#arm {
+  z-index: 2;
+  position: relative;
+  height: 500px;
+  width: 100px;
+  top: -890px;
+  left: 1050px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+
+.animate{
+  animation: coverHair 5s;
+}
