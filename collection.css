@@ -1,0 +1,192 @@
+body {
+  overflow-x: hidden;
+  background-color: white;
+}
+#outsidebody {
+  background-image: url("barbershop_outside.png");
+  background-size: cover;
+}
+#shopbody {
+  background-image: url("barbershot_inside.png");
+  background-size: 100%;
+}
+#stylesbody {
+  background-color: rgba(55, 155, 105, 0.9);
+}
+
+#styleslink {
+  position: absolute;
+  height: 140px;
+  width: 300px;
+  top: 30px;
+  left: 525px;
+  cursor: pointer;
+}
+
+#hud {
+  position: absolute;
+  z-index: 5;
+  top: 30px;
+  right: 50px;
+}
+
+#cutmenu {
+  position: absolute;
+  height: 850px;
+  width: 500px;
+  top: 70px;
+  left: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#barber {
+  z-index: 3;
+  position: absolute;
+  height: 1080px;
+  width: 700px;
+  top: 0px;
+  left: 1320px;
+  background-image: url("barber.gif");
+}
+
+#hair {
+  z-index: 1;
+  position: relative;
+  top: 130px;
+  left: 865px;
+  height:400px;
+  width: 400px;
+  background: url("");
+  background-size: 125%;
+}
+
+#redArrow {
+  cursor: pointer;
+  position: absolute;
+  top:280px;
+  left:765px;
+  height: 0px;
+  width: 0px;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-top: 250px solid rgba(255, 0, 0, .8);
+}
+#start {
+  transform: scaleY(5);
+  position: relative;
+  top: -190px;
+  left: -17px;
+  color: white;
+  font-size: 18px;
+}
+
+/* Animations --------------------------------------------------------- */
+
+@keyframes coverHair {
+  0% {
+    transform: translateX(0px) rotate(180deg);
+  }
+  25% {
+    transform: translateX(-750px) rotate(180deg);
+  }
+  75% {
+    transform: translateX(-750px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(180deg);
+  }
+}
+.coverHair {
+  animation-name: coverHair;
+}
+.animate{
+  animation: shape-polymorph 4s;
+}
+#arm {
+  z-index: 2;
+  position: absolute;
+  height: 335px;
+  width: 960px;
+  top: 150px;
+  left: 1650px;
+  background-image: url("arm.gif");
+  transform: rotate(180deg);
+}
+
+.animate{
+  animation: coverHair 4s;
+}
+
+/* haircuts ---------------------------------------------------------- */
+#cutTitle {
+  font-weight: bolder;
+  font-size: 44px;
+  position: absolute;
+  color: white;
+  top: 20px;
+  left: 30px;
+  height: 50px;
+}
+.cut {
+  line-height: 30pt;
+  cursor: pointer;
+  font-size: 32px;
+  position: relative;
+  color: white;
+  width: 440px;
+}
+.cut:hover {
+  background-color: rgba(200, 200, 200, 0.3);
+}
+#cut1 {
+  top: 70px;
+  left: 30px;
+}
+#cut2 {
+  top: 90px;
+  left: 30px;
+}
+#cut3 {
+  top: 110px;
+  left: 30px;
+}
+#cut4 {
+  top: 130px;
+  left: 30px;
+}
+#cut5 {
+  top: 150px;
+  left: 30px;
+}
+#cut6 {
+  top: 170px;
+  left: 30px;
+}
+#cut7 {
+  top: 190px;
+  left: 30px;
+}
+#cut8 {
+  top: 210px;
+  left: 30px;
+}
+#cut9 {
+  top: 230px;
+  left: 30px;
+}
+#cut10 {
+  top: 250px;
+  left: 30px;
+}
+#cut11 {
+  top: 270px;
+  left: 30px;
+}
+#cut12 {
+  top: 290px;
+  left: 30px;
+}
+#cut13 {
+  top: 310px;
+  left: 30px;
+}
