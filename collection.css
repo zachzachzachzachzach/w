@@ -1,5 +1,5 @@
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: white;
 }
 #outsidebody {
@@ -45,7 +45,7 @@ body {
   height: 1080px;
   width: 700px;
   top: 0px;
-  left: 1320px;
+  left: 1335px;
   background-image: url("barber.gif");
 }
 
